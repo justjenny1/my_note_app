@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 export default function Main({ activeNote, onUpdateNote }) {
     const onEditNote = (k, value) => {
 
-        onUpdateNote({ id: activeNote.id, [k]: value, lastModified: Date.now() })
+        onUpdateNote({ ...activeNote, [k]: value, lastModified: Date.now() })
     }
     return (
         <> {
@@ -46,9 +46,5 @@ export default function Main({ activeNote, onUpdateNote }) {
         } </>
     )
 
-    // if(activeNote)
-    // return
-
-    //     return (
 
 }

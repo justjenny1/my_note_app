@@ -10,6 +10,8 @@ body {
   height: 100vh;
   overflow: hidden;
   font-size: 16px;
+  background-color: #010e1b;
+ 
 }
 
 
@@ -18,7 +20,7 @@ button {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 16px;
   font-family: inherit;
   cursor: pointer;
   color: #08c;
@@ -35,8 +37,10 @@ button:hover {
 .app-sidebar {
   width: 20%;
   height: 100vh;
-  background-color: #040509;
-  color: #ddd;
+  background-color: cornsilk ;
+  color: #010e1b;
+  font-family: georgia;
+  border-style: dashed groove none dotted;
 }
 
 .app-sidebar-header {
@@ -46,11 +50,16 @@ button:hover {
 }
 .app-sidebar-header h4 {
   margin: 0;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px white, 0 0 1em crimson, 0 0 0.2em blue;
+  /* transform: rotate(180deg); */
+  transform: skew(30deg, 0deg);
+  
 }
 
 .app-sidebar-notes {
   height: calc(100vh - 78px);
-  /* overflow-y: scroll; */
+
 }
 .app-sidebar-note {
   padding: 25px;
@@ -62,23 +71,25 @@ button:hover {
 }
 .app-sidebar-note button {
   color: crimson;
+  font-size: 14px;
+
 }
 .app-sidebar-note p {
   margin: 10px 0;
   padding-top: 20px;
+  font-size: 14px;
+  font-style: oblique;
 }
 .app-sidebar-note small {
   display: block;
-  color: #999;
+  color: rgb(95, 93, 93);
   padding-top: 20px;
 }
 
-/* .app-sidebar-note:hover {
-  background:white;
-} */
+
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: rgb(13, 13, 14);
+  background: #010e1b;
   color: white;
 }
 
@@ -118,6 +129,7 @@ textarea {
   resize: none;
   font-size: inherit;
   font-family: inherit;
+  border-style: dashed groove none dotted;
 }
 .app-main-note-edit input {
   border-radius: 5px;
@@ -128,8 +140,9 @@ textarea {
 /* Preview */
 .app-main-note-preview {
   border-radius: 10px;
-  border-top: 1px solid #ddd;
-  /* overflow-y: scroll; */
+  border-top: 2px solid #ddd;
+  border-bottom: 2px;
+  border-style: dashed groove none dotted;
   background: rgba(0, 0, 0, 0.02);
   margin: 10px;
 }
@@ -137,47 +150,16 @@ textarea {
 .preview-title {
   padding: 25px 25px 0 20px;
   margin: 0;
-  font-size: 12px;
+  font-size: 1.5rem;
+  color: crimson;
+  font-family: Georgia;
 }
 
 .markdown-preview {
   padding: 0 25px 25px 20px;
   font-size: 1rem;
   line-height: 2rem;
+  font-family: 'Segoe UI';
+  color: #ddd;
 }
 
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
