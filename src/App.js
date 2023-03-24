@@ -3,7 +3,7 @@ import uuid from "react-uuid";
 import './App.css';
 import Sidebar from './Sidebar';
 import Main from "./Main";
-import Header from "./Header";
+
 
 function App() {
   const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
@@ -52,7 +52,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <Header />
+    
       <Sidebar notes={notes} addNote={addNote}
         deleteNote={deleteNote}
         activeNote={activeNote}
