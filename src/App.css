@@ -46,7 +46,7 @@ button:hover {
 .app-sidebar-header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 30px;
 }
 .app-sidebar-header h4 {
   margin: 0;
