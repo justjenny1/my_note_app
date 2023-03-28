@@ -6,7 +6,7 @@ import Main from "./Main";
 
 
 function App() {
-  // const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
+  const [notes, setNotes] = useState(JSON.parse(localStorage.notes) || []);
   const [notes, setNotes] = useState([]);
   const [activeNote, setActiveNote] = useState('')
  
